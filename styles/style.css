@@ -1,12 +1,44 @@
 .header {
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    align-items: center;
+    box-sizing: border-box;
     
     width: 1100px;
     height: 293px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: header-nav logo contact-header ;
-    justify-items: center;
-    justify-content: space-around;
+    padding: 95px 50px 100px;    
+
+}
+
+.header-nav {
+    display: flex;
+    gap: 32px;
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    list-style: circle;
+}
+
+.unique {
+    list-style: none;
+}
+
+.header-logo {
+    width: 148px;
+    height: 105px;
+    
+}
+
+.contacts-header {
+    justify-self: end;
+    max-width: 240px;
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24.3px;
+    letter-spacing: 0%;
     
 
 }
@@ -14,11 +46,17 @@
 .cover {
     top: 293px;
     width: 1100px;
-    height: 757px;
     background-image: url(images/cover.jpg);
     background-size: cover;
-    
+    position: relative;
 
+}
+
+.overlay {
+    background-color:#000000;
+    position: absolute;
+    width: 1100;
+    opacity: 0.6;
 
 }
 
@@ -29,6 +67,7 @@
 }
 
 .lots {
+    
     top: 1230px;
     left: 24px;
     width: 1052px;
@@ -70,10 +109,10 @@
 .about {
     top: 2073px;
     left: 24px;
-    width: 1052px;
-    height: 595px;
     display: grid;
     grid-template-columns: 240px 693px;
+    width: 1052px;
+    height: 595px;
     
     
 
