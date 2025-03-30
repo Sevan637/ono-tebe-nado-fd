@@ -9,11 +9,11 @@
 
 .header-nav {
     display: flex;
-    gap: 39px;
+    gap: 34px;
     font-weight: 400;
     font-size: 18px;
     line-height: 100%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     list-style: circle;
 }
 
@@ -32,7 +32,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 24.3px;
-    letter-spacing: 0%;
+    letter-spacing: 0;
 }
 
 /* Здесь начинаются стили для первой секции*/
@@ -40,11 +40,13 @@
 .cover {
     position: relative;
     box-sizing: border-box;
+    height: 757px;
     padding-top: 165px;
     padding-bottom: 50px;
     background-image: url(images/cover.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
-    height: 757px;
 }
 
 .cover-title {
@@ -72,13 +74,15 @@
 .aligned-text_center {
     display: flex;
     justify-content: center;
-    
+    margin-top: 7px;
+    margin-right: -0.3em; 
 }
 
 .aligned-text_right {
     display: flex;
     justify-content: end;
-    margin-right: -0.3em;
+    margin-top: 15px;
+    margin-right: -0.3em; 
 }
 
 .description {
@@ -326,29 +330,32 @@
     grid-template-areas: contacts-footer footer-nav socials;
     justify-items: center;
     justify-content: space-between;
-    width: 1100px;
     height: 180px;
-    margin: auto 50px auto;
+    padding-right: 50px;
+    padding-left: 50px;
+    background-color: aqua;
 }
 
-.foote-contacts {
-    justify-self: start;
-    max-width: 264.573486328125;
+.footer-contacts {
     font-weight: 400;
     font-size: 18px;
-    line-height: 24.3px;
-    letter-spacing: 0%;
+    line-height: 100%;
+    letter-spacing: 0;
 }
 
 .footer-nav {
     text-align: center;
     list-style: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0;
 }
 
 .socials {
     display: flex;
-    justify-content: space-between; 
-    width: 240px; 
+    justify-self: end; 
+    gap: 48px; 
     list-style: none;
 }
 
