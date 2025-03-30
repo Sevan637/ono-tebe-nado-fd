@@ -2,17 +2,14 @@
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     align-items: center;
-    box-sizing: border-box;
     height: 293px;
-    padding: 95px 50px 100px;    
-    
-
+    padding: 95px 50px 100px;  
+     
 }
 
 .header-nav {
     display: flex;
-    gap: 32px;
-    font-family: Raleway;
+    gap: 39px;
     font-weight: 400;
     font-size: 18px;
     line-height: 100%;
@@ -25,15 +22,13 @@
 }
 
 .header-logo {
-    width: 148px;
-    height: 105px;
-    
+    width: 129.11196899414062px;
+    height: 104.6517562866211px; 
 }
 
-.contacts-header {
+.header-contacts {
     justify-self: end;
     max-width: 240px;
-    font-family: Raleway;
     font-weight: 400;
     font-size: 18px;
     line-height: 24.3px;
@@ -49,8 +44,7 @@
     padding-bottom: 50px;
     background-image: url(images/cover.jpg);
     background-size: cover;
-
-
+    height: 757px;
 }
 
 .cover-title {
@@ -60,15 +54,13 @@
     grid-template-rows: repeat(3, 1fr);
     width: 1000px;
     height: 385px;
-    margin: auto 50px 118px;
+    margin: auto 50px 106px;
     color: #FFFFFF;
     font-weight: 700;
     font-size: 100px;
     line-height: 114.99999999999999%;
     letter-spacing: 0.3em;
-    text-transform: uppercase;
-    
-    
+    text-transform: uppercase;   
 }
 
 .aligned-text {
@@ -80,6 +72,7 @@
 .aligned-text_center {
     display: flex;
     justify-content: center;
+    
 }
 
 .aligned-text_right {
@@ -87,6 +80,7 @@
     justify-content: end;
     margin-right: -0.3em;
 }
+
 .description {
     position: relative;
     z-index: 1;
@@ -108,17 +102,17 @@
     text-transform: uppercase;
 }
 
-.normal-spacing {
+.normal-spacing-description {
     word-spacing: 22px;
 }
 
-.small-spacing {
+.small-spacing-description {
     position: relative;
     left: 16px;
     word-spacing: 16px;
 }
 
-.big-spacing {
+.big-spacing-description {
     position: relative;
     left: 36px;
     word-spacing: 16px;
@@ -136,6 +130,9 @@
     text-transform: uppercase;
     background-color: transparent;
 }
+
+
+/* Этот оверлей задействован и в секции с лотами тоже */
 
 .overlay {
     position: absolute;
@@ -155,21 +152,20 @@
     flex-direction: column;
     box-sizing: border-box;
     width: 1052px;  
-    margin: 180px 24px 120px;
-    
+    margin: 180px 24px 120px; 
 }
 
 .lots-main-title {
-    width: 121;
-    height: 47;
+    position:relative;
+    left: 40px;
+    width: 121px;
+    height: 47px;
+    margin-bottom: 27px;
     font-weight: 700;
     font-size: 40px;
     line-height: 100%;
     letter-spacing: 0%;
     text-transform: uppercase;
-    position:relative;
-    left: 40px;
-    margin-bottom: 27px;
 }
 
 .lots-list {
@@ -181,11 +177,10 @@
 }
 
 .lots-list-article {
+    position: relative;
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
-    position: relative;   
-    
+    justify-content: space-between;   
 }
 
 
@@ -202,6 +197,7 @@
 .lots-title {
     position: relative;
     z-index: 1;
+    margin: 48px 40px auto;
     color: #FFFFFF;
     font-weight: 700;
     font-size: 22px;
@@ -210,24 +206,23 @@
     text-decoration: underline;
     text-decoration-style: solid;
     text-transform: uppercase;
-    margin: 48px 40px auto;
 }
 
 .lots-text {
-    box-sizing: border-box;
     position: relative;
     z-index: 1;
+    box-sizing: border-box; 
+    margin: auto 40px 48px;
     color: #FFFFFF;
     font-weight: 400;
     font-size: 20px;
     line-height: 120%;
-    letter-spacing: 0%; 
-    margin: auto 40px 48px;
+    letter-spacing: 0%;
 } 
 
-.movie,
-.book,
-.picture {
+.lots-movie,
+.lots-book,
+.lots-picture {
     width: 334px;
     height: 596px;
     background-size: cover;
@@ -235,32 +230,33 @@
 
 
 
-.movie {
+.lots-movie {
     background-image: url(images/card-lot-01.jpg);
+    background-position: center;
     
 }
 
-.book {
+.lots-book {
     background-image: url(images/card-lot-02.jpg);
+    background-position: center;
 }
 
-.picture {
+.lots-picture {
     background-image: url(images/card-lot-03.jpg);
+    background-position: center;
 }
 
 .lots__look-more-link {
     position: relative;
+    left: 40px;
     width: 192px;
     height: 25px;
-    left: 40px;
-    text-decoration-thickness: 1px;
-    color:#000000;
     margin-top: 30px; 
     font-weight: 400;
     font-size: 20px;
     line-height: 100%;
     letter-spacing: 0;
-
+    text-decoration-thickness: 1px;
 }
 
 /* Здесь начинаются стили для секции about*/
@@ -273,16 +269,16 @@
     margin: auto 24px 180px;
 }
 
-.logo-about {
+.about-logo {
     display: flex;
-    background-color: #000000;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
     width: 240px;
     height: 240px;
     margin-top: 35px;
-    align-items: center;
-    justify-content: center;
     border-radius: 50%;
-    justify-self: center;
+    background-color: #000000;
 }
 
 .about-logo-image {
@@ -293,23 +289,21 @@
 .about-article {
     display: flex;
     flex-direction: column;
+    justify-self: center;
     width: 693px;
     min-height: 449px;
     margin-top: 133px;
-    justify-self: center;
 }
 
 .about-title {
-    margin-top: 3px;
     height: 47px;
+    margin-top: 3px;
+    margin-bottom: 100px;
     font-weight: 700;
     font-size: 40px;
     line-height: 100%;
     letter-spacing: 0%;
     text-transform: uppercase;
-    margin-bottom: 100px;
-
-
 }
 
 .about-text {
@@ -352,9 +346,9 @@
 }
 
 .socials {
-    display: flex; 
-    width: 240px;
+    display: flex;
     justify-content: space-between; 
+    width: 240px; 
     list-style: none;
 }
 
