@@ -3,8 +3,7 @@
     grid-template-columns: 1fr min-content 1fr;
     align-items: center;
     height: 293px;
-    padding: 95px 50px 100px;  
-     
+    padding: 95px 50px 100px;    
 }
 
 .header-nav {
@@ -68,7 +67,6 @@
 .aligned-text {
     display: flex;
     justify-content: start; 
-
 }
 
 .aligned-text_center {
@@ -323,6 +321,7 @@
 .about-text-spesial-margin {
     margin-bottom: 24px;
 }
+
 /* Здесь начинаются стили для футера */
 
 .footer {
@@ -353,7 +352,7 @@
     font-style: normal;
 }
 
-.unique-footer-nav{
+.unique-footer-nav {
     text-decoration: none;
 }
 
