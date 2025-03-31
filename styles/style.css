@@ -22,6 +22,7 @@
 
 .unique-header-nav {
     list-style: none;
+    text-decoration: none;
 }
 
 .header-logo {
@@ -36,6 +37,7 @@
     font-size: 18px;
     line-height: 1.25;
     letter-spacing: 0;
+    font-style: normal;
 }
 
 /* Здесь начинаются стили для первой секции*/
@@ -344,6 +346,7 @@
     font-size: 18px;
     line-height: 120%;
     letter-spacing: 0;
+    font-style: normal;
 }
 
 .footer-nav {
