@@ -12,12 +12,12 @@
     gap: 34px;
     font-weight: 400;
     font-size: 18px;
-    line-height: 100%;
     letter-spacing: 0;
     list-style: circle;
+    font-style: normal;
 }
 
-.unique {
+.unique-header-nav {
     list-style: none;
 }
 
@@ -297,6 +297,7 @@
     width: 693px;
     min-height: 449px;
     margin-top: 133px;
+    padding-left: 12px;
 }
 
 .about-title {
@@ -333,13 +334,12 @@
     height: 180px;
     padding-right: 50px;
     padding-left: 50px;
-    background-color: aqua;
 }
 
 .footer-contacts {
     font-weight: 400;
     font-size: 18px;
-    line-height: 100%;
+    line-height: 120%;
     letter-spacing: 0;
 }
 
@@ -348,8 +348,13 @@
     list-style: none;
     font-weight: 400;
     font-size: 18px;
-    line-height: 100%;
+    line-height: 120%;
     letter-spacing: 0;
+    font-style: normal;
+}
+
+.unique-footer-nav{
+    text-decoration: none;
 }
 
 .socials {
